@@ -81,10 +81,10 @@ def check_exercise_1(subclass):
     """
     v = subclass.__mapper_args__['polymorphic_identity'] == "person"
     v &= len(subclass.__argnames__) == 1 and 'person' in subclass.__argnames__
-    print 'Correct!' if v else 'Sorry, try again!'
+    print ('Correct!' if v else 'Sorry, try again!')
 
 
 def check_exercise_2(c):
     s1 = c[0].get_span()
     s2 = c[1].get_span()
-    print 'Correct!' if "{} {}".format(s1, s2) == "Katrina Dawson Paul Smith" else 'Sorry, try again!'
+    print ('Correct!' if "{} {}".format(s1, s2) == "Katrina Dawson Paul Smith" else 'Sorry, try again!')
